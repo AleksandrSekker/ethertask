@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Table } from 'antd';
 import axios from 'axios';
-interface Props {}
 
-export const GetDataToken = (props: Props) => {
+export const GetDataToken = () => {
   const [state, setstate] = useState();
   useEffect(() => {
     getData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
+  const api = process.env.REACT_APP_API;
   const getData = async () => {
     await axios
-      .get(
-        'https://api.etherscan.io/api?module=account&action=tokentx&address=0xA145ac099E3d2e9781C9c848249E2e6b256b030D&startblock=0&endblock=999999999&sort=asc&apikey=RXV9BUPW94J16JQC829C1Y8RHNAR637BDU'
-      )
+      .get(`${api}`)
       .then((res) => {
-        console.log(res.data.result);
         setstate(
           res.data.result.map((res: any) => ({
             Name: res.tokenName,
             Symbol: res.tokenSymbol,
             Value: res.value,
+            Id: res.blockHash,
           }))
         );
-      });
+      })
+      .catch((err) => console.log(err));
   };
 
   const columns = [
@@ -43,5 +42,5 @@ export const GetDataToken = (props: Props) => {
       key: 'value',
     },
   ];
-  return <Table dataSource={state} columns={columns} />;
+  return <Table dataSource={state} columns={columns} rowKey="Id" />;
 };
