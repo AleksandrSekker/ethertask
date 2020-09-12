@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ethertask/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/ethertask/static/js/main.343f96fa.chunk.js",
+    "main.js.map": "/ethertask/static/js/main.343f96fa.chunk.js.map",
+    "runtime-main.js": "/ethertask/static/js/runtime-main.2726fd47.js",
+    "runtime-main.js.map": "/ethertask/static/js/runtime-main.2726fd47.js.map",
+    "static/css/2.6df4c8f8.chunk.css": "/ethertask/static/css/2.6df4c8f8.chunk.css",
+    "static/js/2.f8a15d10.chunk.js": "/ethertask/static/js/2.f8a15d10.chunk.js",
+    "static/js/2.f8a15d10.chunk.js.map": "/ethertask/static/js/2.f8a15d10.chunk.js.map",
+    "index.html": "/ethertask/index.html",
+    "precache-manifest.fe7d1e8ae9928f74b67dd3d1fe003d96.js": "/ethertask/precache-manifest.fe7d1e8ae9928f74b67dd3d1fe003d96.js",
+    "service-worker.js": "/ethertask/service-worker.js",
+    "static/css/2.6df4c8f8.chunk.css.map": "/ethertask/static/css/2.6df4c8f8.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/ethertask/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.f8a15d10.chunk.js.LICENSE.txt": "/ethertask/static/js/2.f8a15d10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2726fd47.js",
+    "static/css/2.6df4c8f8.chunk.css",
+    "static/js/2.f8a15d10.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.343f96fa.chunk.js"
+  ]
+}
